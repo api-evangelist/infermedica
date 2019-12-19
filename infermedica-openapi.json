@@ -1,0 +1,895 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v2",
+        "title": "Infermedica",
+        "description": "Empower your healthcare services with intelligent diagnostic insights of Infermedica API.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.infermedica.com\/v1"
+    ],
+    "paths": {
+        "\/conditions": {
+            "get": {
+                "summary": "Get Conditions",
+                "description": "Returns a list of all available conditions.",
+                "operationId": "GetConditions",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/conditions\/{id}": {
+            "get": {
+                "summary": "Get Conditions",
+                "description": "Returns details of a single condition specified by id parameter.",
+                "operationId": "GetConditions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "condition id"
+                    }
+                ]
+            }
+        },
+        "\/diagnosis": {
+            "post": {
+                "summary": "Post Diagnosis",
+                "description": "Suggests possible diagnoses and relevant observations based on provided patient information.",
+                "operationId": "PostDiagnosis",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/explain": {
+            "post": {
+                "summary": "Post Explain",
+                "description": "Explains which evidence impact probability of selected condition.",
+                "operationId": "PostExplain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/info": {
+            "get": {
+                "summary": "Get Info",
+                "description": "Returns information about data used by diagnostic engine.",
+                "operationId": "GetInfo",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lab_tests": {
+            "get": {
+                "summary": "Get Lab Tests",
+                "description": "Returns a list of all available lab tests.",
+                "operationId": "GetLabTests",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lab_tests\/{id}": {
+            "get": {
+                "summary": "Get Lab Tests",
+                "description": "Returns details of a single lab test specified by id parameter.",
+                "operationId": "GetLabTests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "condition id"
+                    }
+                ]
+            }
+        },
+        "\/lookup": {
+            "get": {
+                "summary": "Get Lookup",
+                "description": "Returns a single observation matching given phrase.",
+                "operationId": "GetLookup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "phrase to match"
+                    },
+                    {
+                        "name": "sex",
+                        "in": "query",
+                        "description": "sex filter"
+                    }
+                ]
+            }
+        },
+        "\/parse": {
+            "post": {
+                "summary": "Post Parse",
+                "description": "Returns list of mentions of observation found in given text.",
+                "operationId": "PostParse",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/risk_factors": {
+            "get": {
+                "summary": "Get Risk Factors",
+                "description": "Returns a list of all available risk factors.",
+                "operationId": "GetRiskFactors",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/risk_factors\/{id}": {
+            "get": {
+                "summary": "Get Risk Factors",
+                "description": "Returns details of a single risk factor specified by id parameter.",
+                "operationId": "GetRiskFactors",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "condition id"
+                    }
+                ]
+            }
+        },
+        "\/search": {
+            "get": {
+                "summary": "Get Search",
+                "description": "Returns list of observations matching the given phrase.",
+                "operationId": "GetSearch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "phrase",
+                        "in": "query",
+                        "description": "phrase to match"
+                    },
+                    {
+                        "name": "sex",
+                        "in": "query",
+                        "description": "sex filter"
+                    },
+                    {
+                        "name": "max_results",
+                        "in": "query",
+                        "description": "maximum number of results"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "type of results"
+                    }
+                ]
+            }
+        },
+        "\/suggest": {
+            "post": {
+                "summary": "Post Suggest",
+                "description": "Suggests possible symptoms based on provided patient information.",
+                "operationId": "PostSuggest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "max_results",
+                        "in": "query",
+                        "description": "maximum number of results"
+                    }
+                ]
+            }
+        },
+        "\/symptoms": {
+            "get": {
+                "summary": "Get Symptoms",
+                "description": "Returns a list of all available symptoms.",
+                "operationId": "GetSymptoms",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/symptoms\/{id}": {
+            "get": {
+                "summary": "Get Symptoms",
+                "description": "Returns details of a single symptom specified by id parameter.",
+                "operationId": "GetSymptoms",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "condition id"
+                    }
+                ]
+            }
+        },
+        "\/triage": {
+            "post": {
+                "summary": "Post Triage",
+                "description": "Estimates triage level based on provided patient information.",
+                "operationId": "PostTriage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/observations": {
+            "get": {
+                "summary": "List all observations",
+                "description": "Returns a list of all available observations.",
+                "operationId": "GetAllObservations",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/observations\/{id}": {
+            "get": {
+                "summary": "Get observation by id",
+                "description": "Returns details of a single observation specified by id parameter.",
+                "operationId": "GetObservation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "condition id"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Choice": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Condition": {
+                "type": "object",
+                "properties": {
+                    "acuteness": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "categories": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "prevalence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "severity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex_filter": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "triage_level": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConditionProbability": {
+                "type": "object",
+                "properties": {
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "probability": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DiagnosisRequest": {
+                "type": "object",
+                "properties": {
+                    "age": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evaluated_at": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evidence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "pursued": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "DiagnosisResponse": {
+                "type": "object",
+                "properties": {
+                    "conditions": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "should_stop": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Evidence": {
+                "type": "object",
+                "properties": {
+                    "choice_id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "initial": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "observed_at": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "related": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExplanationEvidence": {
+                "type": "object",
+                "properties": {
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExplanationRequest": {
+                "type": "object",
+                "properties": {
+                    "age": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evaluated_at": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evidence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "target": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExplanationResponse": {
+                "type": "object",
+                "properties": {
+                    "conflicting_evidence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "supporting_evidence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "unconfirmed_evidence": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Info": {
+                "type": "object",
+                "properties": {
+                    "conditions_count": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "lab_tests_count": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "risk_factors_count": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "symptoms_count": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LabTest": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "LabTestResult": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ObservationMention": {
+                "type": "object",
+                "properties": {
+                    "choice_id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "head_position": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "orth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "positions": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ParseRequest": {
+                "type": "object",
+                "properties": {
+                    "concept_types": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "correct_spelling": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "include_tokens": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ParseResponse": {
+                "type": "object",
+                "properties": {
+                    "mentions": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "tokens": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Question": {
+                "type": "object",
+                "properties": {
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "QuestionItem": {
+                "type": "object",
+                "properties": {
+                    "choices": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "RiskFactor": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "image_source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "question": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex_filter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchResult": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SeriousObservation": {
+                "type": "object",
+                "properties": {
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "is_emergency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SuggestRequest": {
+                "type": "object",
+                "properties": {
+                    "age": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evaluated_at": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "evidence": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SuggestResult": {
+                "type": "object",
+                "properties": {
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Symptom": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "common_name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "extras": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "image_source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "image_url": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parent_id": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "parent_relation": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "question": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "sex_filter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "TriageResponse": {
+                "type": "object",
+                "properties": {
+                    "serious": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "triage_level": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DatabaseInfo": {
+                "type": "object",
+                "properties": {
+                    "conditions_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "observations_count": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updated_at": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Observation": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent_id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent_relation_type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sex_filter": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "valid_for": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
