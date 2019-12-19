@@ -1,0 +1,558 @@
+{
+    "id": "935977001454710895959852ff0b9827",
+    "name": "Infermedica",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "973517ab8c98512dc16af1fc6ba1afc1",
+            "name": "Get Conditions",
+            "url": "httpsapi.infermedica.com\/v1\/conditions",
+            "description": "Returns a list of all available conditions.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "c517cfe52bd2c4d67259f86c8c700660",
+            "name": "Get Conditions",
+            "url": "httpsapi.infermedica.com\/v1\/conditions\/{id}",
+            "description": "Returns details of a single condition specified by id parameter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "condition id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "46ac802764b85d9c60e3f6d03f013c36",
+            "name": "Post Diagnosis",
+            "url": "httpsapi.infermedica.com\/v1\/diagnosis",
+            "description": "Suggests possible diagnoses and relevant observations based on provided patient information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "bcaad657fd3f4137514112a4d5e8ae7a",
+            "name": "Post Explain",
+            "url": "httpsapi.infermedica.com\/v1\/explain",
+            "description": "Explains which evidence impact probability of selected condition.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "05224da25a5f09fb2eb10f5de7893348",
+            "name": "Get Info",
+            "url": "httpsapi.infermedica.com\/v1\/info",
+            "description": "Returns information about data used by diagnostic engine.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "9270efc5d1646181197b5e87981e9eee",
+            "name": "Get Lab Tests",
+            "url": "httpsapi.infermedica.com\/v1\/lab_tests",
+            "description": "Returns a list of all available lab tests.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "7779eafccbee518a574b9dc14d410409",
+            "name": "Get Lab Tests",
+            "url": "httpsapi.infermedica.com\/v1\/lab_tests\/{id}",
+            "description": "Returns details of a single lab test specified by id parameter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "condition id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "abdab85410a9c5a3dafcae4f1704b86a",
+            "name": "Get Lookup",
+            "url": "httpsapi.infermedica.com\/v1\/lookup",
+            "description": "Returns a single observation matching given phrase.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "phrase",
+                    "description": "phrase to match",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sex",
+                    "description": "sex filter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb2cb41a90a6f38f41d323199b514864",
+            "name": "Post Parse",
+            "url": "httpsapi.infermedica.com\/v1\/parse",
+            "description": "Returns list of mentions of observation found in given text.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "c64305c087a7f205caf896109ec8d484",
+            "name": "Get Risk Factors",
+            "url": "httpsapi.infermedica.com\/v1\/risk_factors",
+            "description": "Returns a list of all available risk factors.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "3da6cb1ba1250b5fdd6e8b9265396489",
+            "name": "Get Risk Factors",
+            "url": "httpsapi.infermedica.com\/v1\/risk_factors\/{id}",
+            "description": "Returns details of a single risk factor specified by id parameter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "condition id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "579c7ff3c428ac179c8fbf408b5bbd5e",
+            "name": "Get Search",
+            "url": "httpsapi.infermedica.com\/v1\/search",
+            "description": "Returns list of observations matching the given phrase.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "phrase",
+                    "description": "phrase to match",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sex",
+                    "description": "sex filter",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max_results",
+                    "description": "maximum number of results",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "type of results",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "33da493d5984ac0272e5bf07aa5bec31",
+            "name": "Post Suggest",
+            "url": "httpsapi.infermedica.com\/v1\/suggest",
+            "description": "Suggests possible symptoms based on provided patient information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max_results",
+                    "description": "maximum number of results",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd3806a98cb54f9964afb90229100fe3",
+            "name": "Get Symptoms",
+            "url": "httpsapi.infermedica.com\/v1\/symptoms",
+            "description": "Returns a list of all available symptoms.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "da340871a53742535a546e126d17c20d",
+            "name": "Get Symptoms",
+            "url": "httpsapi.infermedica.com\/v1\/symptoms\/{id}",
+            "description": "Returns details of a single symptom specified by id parameter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "condition id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "e67b0c722bb4bc18b88ebd03c80371f8",
+            "name": "Post Triage",
+            "url": "httpsapi.infermedica.com\/v1\/triage",
+            "description": "Estimates triage level based on provided patient information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "10976caf9ccd84f1ab75d52183543531",
+            "name": "List all observations",
+            "url": "httpsapi.infermedica.com\/v1\/observations",
+            "description": "Returns a list of all available observations.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        },
+        {
+            "id": "f43f8b2117c9e82da22fbb5906f3ad64",
+            "name": "Get observation by id",
+            "url": "httpsapi.infermedica.com\/v1\/observations\/{id}",
+            "description": "Returns details of a single observation specified by id parameter.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "condition id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "935977001454710895959852ff0b9827",
+            "rawModeData": ""
+        }
+    ]
+}
