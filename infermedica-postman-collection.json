@@ -1,5 +1,5 @@
 {
-    "id": "935977001454710895959852ff0b9827",
+    "id": "319e9f486f0a84867bb6af53490fe6db",
     "name": "Infermedica",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "973517ab8c98512dc16af1fc6ba1afc1",
+            "id": "4104c369e9a74c7316fa5e40245392e6",
             "name": "Get Conditions",
             "url": "httpsapi.infermedica.com\/v1\/conditions",
             "description": "Returns a list of all available conditions.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "c517cfe52bd2c4d67259f86c8c700660",
+            "id": "5211a10ad4177d4035f83fef5e4f3c73",
             "name": "Get Conditions",
             "url": "httpsapi.infermedica.com\/v1\/conditions\/{id}",
             "description": "Returns details of a single condition specified by id parameter.",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "46ac802764b85d9c60e3f6d03f013c36",
+            "id": "d93e0f684d742cf91c7160b1da845962",
             "name": "Post Diagnosis",
             "url": "httpsapi.infermedica.com\/v1\/diagnosis",
             "description": "Suggests possible diagnoses and relevant observations based on provided patient information.",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "bcaad657fd3f4137514112a4d5e8ae7a",
+            "id": "0ea00eb1ae52ec986b7ed355e23c0948",
             "name": "Post Explain",
             "url": "httpsapi.infermedica.com\/v1\/explain",
             "description": "Explains which evidence impact probability of selected condition.",
@@ -122,11 +122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "05224da25a5f09fb2eb10f5de7893348",
+            "id": "0bc021df650d85d478e4bd74d4b986d7",
             "name": "Get Info",
             "url": "httpsapi.infermedica.com\/v1\/info",
             "description": "Returns information about data used by diagnostic engine.",
@@ -145,11 +145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "9270efc5d1646181197b5e87981e9eee",
+            "id": "c4cdb460baabe11583bf79f1c328c9aa",
             "name": "Get Lab Tests",
             "url": "httpsapi.infermedica.com\/v1\/lab_tests",
             "description": "Returns a list of all available lab tests.",
@@ -168,11 +168,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "7779eafccbee518a574b9dc14d410409",
+            "id": "b93b534f6a97d6fbe1e6fca3fa1e96fe",
             "name": "Get Lab Tests",
             "url": "httpsapi.infermedica.com\/v1\/lab_tests\/{id}",
             "description": "Returns details of a single lab test specified by id parameter.",
@@ -199,11 +199,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "abdab85410a9c5a3dafcae4f1704b86a",
+            "id": "6c6c5e818d2c021792f1ffb3d85653ce",
             "name": "Get Lookup",
             "url": "httpsapi.infermedica.com\/v1\/lookup",
             "description": "Returns a single observation matching given phrase.",
@@ -237,11 +237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "cb2cb41a90a6f38f41d323199b514864",
+            "id": "d6426a24d025550436066e3ca5efc63a",
             "name": "Post Parse",
             "url": "httpsapi.infermedica.com\/v1\/parse",
             "description": "Returns list of mentions of observation found in given text.",
@@ -268,11 +268,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "c64305c087a7f205caf896109ec8d484",
+            "id": "4008349eb73f48b1e337cf95e61b1ef5",
             "name": "Get Risk Factors",
             "url": "httpsapi.infermedica.com\/v1\/risk_factors",
             "description": "Returns a list of all available risk factors.",
@@ -291,11 +291,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "3da6cb1ba1250b5fdd6e8b9265396489",
+            "id": "614de7522b3326ff9b42940ba8f516f1",
             "name": "Get Risk Factors",
             "url": "httpsapi.infermedica.com\/v1\/risk_factors\/{id}",
             "description": "Returns details of a single risk factor specified by id parameter.",
@@ -322,11 +322,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "579c7ff3c428ac179c8fbf408b5bbd5e",
+            "id": "0941400c5189086d857a5f1c2365aba2",
             "name": "Get Search",
             "url": "httpsapi.infermedica.com\/v1\/search",
             "description": "Returns list of observations matching the given phrase.",
@@ -374,11 +374,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "33da493d5984ac0272e5bf07aa5bec31",
+            "id": "5a830a7ae048030939283865bc51f331",
             "name": "Post Suggest",
             "url": "httpsapi.infermedica.com\/v1\/suggest",
             "description": "Suggests possible symptoms based on provided patient information.",
@@ -412,11 +412,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "bd3806a98cb54f9964afb90229100fe3",
+            "id": "cddf003dbb3868303f5761bde30c3390",
             "name": "Get Symptoms",
             "url": "httpsapi.infermedica.com\/v1\/symptoms",
             "description": "Returns a list of all available symptoms.",
@@ -435,11 +435,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "da340871a53742535a546e126d17c20d",
+            "id": "d33e03e896c8c0f69295225a03a42d4a",
             "name": "Get Symptoms",
             "url": "httpsapi.infermedica.com\/v1\/symptoms\/{id}",
             "description": "Returns details of a single symptom specified by id parameter.",
@@ -466,11 +466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "e67b0c722bb4bc18b88ebd03c80371f8",
+            "id": "803da3e8e3f6d0dd32cc4864e91ea760",
             "name": "Post Triage",
             "url": "httpsapi.infermedica.com\/v1\/triage",
             "description": "Estimates triage level based on provided patient information.",
@@ -497,11 +497,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "10976caf9ccd84f1ab75d52183543531",
+            "id": "36c98232e3040bf923780a5395c4632b",
             "name": "List all observations",
             "url": "httpsapi.infermedica.com\/v1\/observations",
             "description": "Returns a list of all available observations.",
@@ -520,11 +520,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         },
         {
-            "id": "f43f8b2117c9e82da22fbb5906f3ad64",
+            "id": "385097d93588d4f290a2f908b623c677",
             "name": "Get observation by id",
             "url": "httpsapi.infermedica.com\/v1\/observations\/{id}",
             "description": "Returns details of a single observation specified by id parameter.",
@@ -551,7 +551,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "935977001454710895959852ff0b9827",
+            "collectionId": "319e9f486f0a84867bb6af53490fe6db",
             "rawModeData": ""
         }
     ]
