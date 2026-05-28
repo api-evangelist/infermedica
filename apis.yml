@@ -1,0 +1,32 @@
+aid: infermedica
+name: Infermedica
+description: "NLP based symptom checker and patient triage API for health diagnosis from text"
+url: https://developer.infermedica.com/docs/
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Health"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Health
+  - Public APIs
+apis:
+  - name: Infermedica
+    description: "NLP based symptom checker and patient triage API for health diagnosis from text"
+    humanURL: https://developer.infermedica.com/docs/
+    baseURL: https://developer.infermedica.com/docs/
+    tags:
+      - Health
+    properties:
+      - type: Documentation
+        url: https://developer.infermedica.com/docs/
+common:
+  - type: Website
+    url: https://developer.infermedica.com/docs/
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
