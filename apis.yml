@@ -23,10 +23,16 @@ apis:
       - type: Documentation
         url: https://developer.infermedica.com/docs/
 common:
+  - type: TrustCenter
+    url: security/infermedica-trust-center.yml
+  - type: DomainSecurity
+    url: security/infermedica-domain-security.yml
   - type: Website
     url: https://developer.infermedica.com/docs/
   - type: PublicAPIsListing
     url: https://github.com/public-apis/public-apis
+  - url: https://infermedica.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
