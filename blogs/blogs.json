@@ -1,0 +1,14 @@
+{
+  "repo": "infermedica",
+  "feeds": [
+    {
+      "source": "https://infermedica.com/blog",
+      "feed_url": "https://infermedica.com/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 3
+}
