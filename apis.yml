@@ -39,7 +39,6 @@ apis:
   - name: Infermedica
     description: "NLP based symptom checker and patient triage API for health diagnosis from text"
     humanURL: https://developer.infermedica.com/docs/
-    baseURL: https://developer.infermedica.com/docs/
     tags:
       - Health
     properties:
